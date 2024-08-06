@@ -1,0 +1,100 @@
+.chat {
+  padding-top: 50px;
+  margin: 0 150px;
+}
+
+.chatContacts {
+  padding-bottom: 15px;
+  border-bottom: 1px solid black;
+  display: flex;
+  gap: 10px;
+  overflow-x: scroll;
+}
+
+.chatContacts .contact {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.chatContacts .contact img {
+  width: 75px;
+  border-radius: 50%;
+}
+
+.chatContacts .contact .new {
+  border: 5px solid lightslategray;
+}
+
+.chatBox {
+  position: relative;;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px
+}
+
+.chatBoxReceiverInfo {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  width: 50px;
+}
+
+.chatBoxReceiverInfo img {
+  width: 45px;
+  border-radius: 50%;
+  padding: 0 12px;
+}
+
+.chatBoxReceiverInfo span {
+  position: absolute;
+  right: 20px;
+  top: 60px;
+  cursor: pointer;
+}
+
+.chatBoxMessages {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  overflow-y: scroll;
+  height: 300px;
+  max-height: 300px;
+}
+
+.chatBoxMessages .own{
+  align-self: flex-end;
+  text-align: right;
+}
+
+.chatBoxForm {
+  align-self: flex-end;
+  width: 100%;
+}
+
+.chatBoxForm form {
+  display: flex;
+  width: 100%;
+  padding: 15px;
+}
+
+.chatBoxForm form input {
+  flex: 4;
+  width: 100%;
+  height: 40px;
+  font-size: 16px;
+}
+
+.chatBoxForm form button {
+  flex: 1;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+
