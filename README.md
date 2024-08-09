@@ -10,7 +10,7 @@ $sudo docker network create my-network
 
 ## Create docker images
 
-$sudo docker compose --build
+$sudo docker compose build
 
 ## Run containers
 
