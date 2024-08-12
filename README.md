@@ -1,17 +1,23 @@
-## Clone this project to local repo
+# Deploy on DockerDocker
 
+Clone this project to local repo
+```
 $git clone https://github.com/lam-ntt/nnn.git
+```
 
 ### Open this project (nnn) in terminal and follow these steps:
 
-## Create new network
-
+Create new network
+```
 $sudo docker network create my-network
+```
 
-## Create docker images
-
+Create docker images
+```
 $sudo docker compose build
+```
 
-## Run containers
-
+Run docker containers
+```
 $sudo docker compose up
+```
