@@ -1,4 +1,4 @@
-# Deploy on DockerDocker
+# Deploy on Docker
 
 Clone this project to local repo
 ```
