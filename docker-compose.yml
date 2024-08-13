@@ -1,11 +1,15 @@
+version: "3"
 services:
   api:
     image: api
     build:
       context: ./api
       dockerfile: Dockerfile
-    ports: 
+    ports:
       - "5000:5000"
+    volumes:
+      - ./api/routers:/app/routers
+      - ./api/models:/app/models
     environment:
       MONGO_URI: "mongodb+srv://nguyenthithanhlam2017:fRF304tKt312i0rS@cluster0.n9bnc1i.mongodb.net/"
     networks:
@@ -16,7 +20,7 @@ services:
     build:
       context: ./socket
       dockerfile: Dockerfile
-    ports: 
+    ports:
       - "4000:4000"
     networks:
       - my-network
@@ -26,9 +30,11 @@ services:
     build:
       context: ./client
       dockerfile: Dockerfile
-    ports: 
+    ports:
       - "3000:3000"
-    depends_on: 
+    volumes:
+      - ./client/src:/app/src
+    depends_on:
       - api
       - socket
     networks:
